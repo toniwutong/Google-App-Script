@@ -4,7 +4,7 @@ function copytoallfinal(){
   var ss = SpreadsheetApp.openById(NameIdspreadsheet);
   var last_row = ss.getActiveSheet().getLastRow();
   var last_column = ss.getActiveRange().getLastColumn();
-  var data = ss.getActiveSheet().getRange(2, 1, last_row-1,2);
+  var data = ss.getActiveSheet().getRange(2, 1, last_row-1,2).getValues();
   var ssid = ""
   
   //Get the name and spreadsheetid of each gpowner
